@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Wire — AI News Summarizer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz@8..60&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="scanline"></div>
+
+  <header class="masthead">
+    <div class="masthead-inner">
+      <div class="brand">
+        <span class="brand-mark">THE WIRE</span>
+        <span class="brand-sub">instant ai news summaries</span>
+      </div>
+      <div class="live-indicator">
+        <span class="pulse-dot"></span>
+        <span class="live-label">powered by AI</span>
+      </div>
+    </div>
+    <div class="masthead-rule"></div>
+  </header>
+
+  <main class="container">
+
+    <section class="intake">
+      <p class="intake-eyebrow">01 — search a topic</p>
+      <h1 class="intake-title">Get the latest news on any topic</h1>
+      <div class="search-row">
+        <span class="search-caret">&gt;</span>
+        <input type="text" id="topicInput" placeholder="type a topic — e.g. artificial intelligence, cricket, markets" autocomplete="off" />
+        <button id="searchBtn">
+          <span class="btn-label">Summarize</span>
+          <span class="btn-spinner" aria-hidden="true"></span>
+        </button>
+      </div>
+      <div id="status" class="status-line" role="status" aria-live="polite"></div>
+    </section>
+
+    <section class="feed">
+      <div class="feed-header" id="feedHeader" style="display:none;">
+        <span class="feed-header-line"></span>
+        <span class="feed-header-text">top stories</span>
+        <span class="feed-header-line"></span>
+      </div>
+      <div id="results" class="results"></div>
+    </section>
+
+    <div id="emptyState" class="empty-state">
+      <p class="empty-glyph">⌁</p>
+      <p class="empty-text">Search a topic above to get started.</p>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Built with Flask, NewsAPI &amp; Gemini — <a href="https://github.com/" target="_blank" rel="noopener noreferrer">source on GitHub</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

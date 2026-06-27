@@ -2,8 +2,10 @@
 
 A web app that fetches live news articles on any topic and summarizes them using AI — so you can get the gist of what's happening without reading five different articles.
 
-**Live demo:** _coming soon_
-**Backend repo / API:** _coming soon_
+**Live demo:** [ai-news-summarizer-phi.vercel.app](https://ai-news-summarizer-phi.vercel.app)
+**Backend API:** [ai-news-summarizer-4rut.onrender.com](https://ai-news-summarizer-4rut.onrender.com)
+
+> Note: the backend is hosted on Render's free tier, which spins down after periods of inactivity. The first request after idle time may take 30–50 seconds while the server wakes up — subsequent requests are fast.
 
 ---
 
